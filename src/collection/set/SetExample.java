@@ -5,6 +5,12 @@ import java.util.Set;
 
 public class SetExample {
     public static void main(String[] args) {
+    	
+    	//SET
+    	//HASHSET
+    	//TREESET
+    	
+    	
         // Creating a HashSet
         Set<String> set = new HashSet<>();
 

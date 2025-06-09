@@ -15,6 +15,7 @@ public class Test {
 		list.add("Element3");
 
 		list.remove("Element");
+		boolean f = list.contains("Elej");
 		
 		//list.clear();//delete all
 		

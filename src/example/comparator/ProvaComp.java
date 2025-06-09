@@ -22,17 +22,20 @@ public class ProvaComp {
 		myCountryList.add(spain);
 
 //		//ORDINAMENTO PER area
-//		int res = germany.compareTo(unitedKingdom);
-//		System.out.println(res);
+		int res = germany.compareTo(unitedKingdom);
+		System.out.println(res);
 ////		
 //		int res1 = unitedKingdom.compareTo(italy);
 //		System.out.println(res1);
 		
 		
 //		System.out.println("ORDINAMENTO PER AREA:");
-		Collections.sort(myCountryList);
-		
+		//Collections.sort(myCountryList);
 		Collections.sort(myCountryList, Collections.reverseOrder());
+		
+		System.out.println(myCountryList);
+		
+//		
 //
 //		for (Country item : myCountryList) {
 //			System.out.println(item.getName());
@@ -42,13 +45,13 @@ public class ProvaComp {
 //
 //////	//ORDINAMENTO PER POPOLAZIONE:
 //	System.out.println("ORDINAMENTO PER POPOLAZIONE:");
-	Collections.sort(myCountryList, new PopulationComparator());
+//	Collections.sort(myCountryList, new PopulationComparator());
 //	
 //	Collections.sort(myCountryList);
 //
-	for (Country item : myCountryList) {
-		System.out.println(item.getName());
-	}
+//	for (Country item : myCountryList) {
+//		System.out.println(item.getName());
+//	}
 //	System.out.println("---------------------------------------------------------");
 //
 //

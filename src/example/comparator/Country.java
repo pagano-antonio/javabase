@@ -22,11 +22,12 @@ public class Country implements Comparable<Country> {
 		
 		int result;
 		//result =    this.area - o.getArea();
-		// negativo se o è piu grande di this
+		// negativo se o ï¿½ piu grande di this
 		// zero se sono uguali
-		//positivo se this è mmaggiore di o
+		//positivo se this ï¿½ mmaggiore di o
 		
-		result =    o.getArea() - this.area;
+		//result =    o.getArea() - this.area;
+		result =    o.getPopulation() - this.population;
 		
 		return result;
 		

@@ -23,7 +23,7 @@ public class OperazioniBasiche {
 
 //	        System.out.println(fruits);
 	        // Getting element at index 0
-//	        System.out.println("Element at index 1: " + fruits.get(0)); // Banana
+        System.out.println("Element at index 1: " + fruits.get(0)); // Banana
 //
 	        // Setting element at index 2
 //	        fruits.set(2, "Mango");
