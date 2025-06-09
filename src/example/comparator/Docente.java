@@ -1,6 +1,6 @@
 package example.comparator;
 
-public class Docente implements Comparable{
+public class Docente implements Comparable<Docente>{
 
 	private String nome;
 	private String cognome;
@@ -69,11 +69,11 @@ public class Docente implements Comparable{
 	
 	
 	@Override
-	public int compareTo(Object o) {
-		Docente d = (Docente) o;
+	public int compareTo(Docente o) {
+	
 		
 		//int res = d.eta -this.eta;
-		int res = this.eta-d.eta;
+		int res = this.eta-o.eta;
 		
 		return res;
 	}
