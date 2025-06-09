@@ -72,8 +72,9 @@ public class Docente implements Comparable<Docente>{
 	public int compareTo(Docente o) {
 	
 		
-		//int res = d.eta -this.eta;
-		int res = this.eta-o.eta;
+		int res = o.eta -this.eta;
+		//int res = this.eta-o.eta;
+		//int res = this.nome.compareTo(o.getNome());
 		
 		return res;
 	}

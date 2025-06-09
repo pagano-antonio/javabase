@@ -28,6 +28,17 @@ public class TestDocente {
 		
 		System.out.println(l);
 		
+		
+		
+		
+		
+		Collections.sort(l, new DocenteNomeComparator());
+		System.out.println(l);
+		
+		
+		Collections.sort(l, new DocenteCognomeComparator());
+		System.out.println(l);	
+		
 	}
 
 }
