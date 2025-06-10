@@ -42,16 +42,23 @@ public class TreeMapExample {
 
         System.out.println(treeMap);
         
-        // Automatically sorted by key
-        Set<Map.Entry<String, Integer>> f = treeMap.entrySet();
+        // Insieme Chiavi
+        for( String f1: treeMap.keySet())
+        	System.out.println("chiave:"+f1 + " valore:"+treeMap.get(f1));
         
-        
-        System.out.println("Sorted map:");
-        for (Map.Entry<String, Integer> e : f) {
-        	
-            System.out.println(e.getKey() + " = " + e.getValue());
-        }
-        
+        //Insieme Valori
+       for( Integer f2: treeMap.values())
+        	System.out.println( " valore:"+f2);
+       
+       // Insieme Coppie Chiavi,valori
+       Set<Map.Entry<String, Integer>> f = treeMap.entrySet();
+       System.out.println("Sorted map:");
+       for (Map.Entry<String, Integer> e : f) {
+       	
+           System.out.println(e.getKey() + " = " + e.getValue());
+       }
+       
+      
         
   
     /*	
