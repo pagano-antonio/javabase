@@ -42,39 +42,45 @@ public class TreeMapExample {
 
         System.out.println(treeMap);
         
+        
+        
+  /*      
         // Insieme Chiavi
         for( String f1: treeMap.keySet())
         	System.out.println("chiave:"+f1 + " valore:"+treeMap.get(f1));
+  */      
+        
+   /*    
         
         //Insieme Valori
        for( Integer f2: treeMap.values())
         	System.out.println( " valore:"+f2);
+   
+    */   
        
        // Insieme Coppie Chiavi,valori
-       Set<Map.Entry<String, Integer>> f = treeMap.entrySet();
-       System.out.println("Sorted map:");
-       for (Map.Entry<String, Integer> e : f) {
+       for (Map.Entry<String, Integer> e : treeMap.entrySet()) {
        	
-           System.out.println(e.getKey() + " = " + e.getValue());
+           System.out.println(e.getKey() + ": " + e.getValue());
        }
        
       
         
   
-    /*	
-        Map<Person, Integer> treeMap = new TreeMap<>();
+    	
+        Map<Person, Integer> treeMap2 = new TreeMap<>();
 
         // Adding elements
-        treeMap.put(new Person("Antonio", "Pagano",18), 1);
-        treeMap.put(new Person("Michele", "Pagano",18), 1);
-        treeMap.put(new Person("Giovanni", "Pagano",18), 1);
+        treeMap2.put(new Person("Antonio", "Pagano",18), 1);
+        treeMap2.put(new Person("Michele", "Pagano",18), 1);
+        treeMap2.put(new Person("Giovanni", "Pagano",18), 1);
 
         // Automatically sorted by key
         System.out.println("Sorted map:");
-        for (Map.Entry<Person, Integer> entry : treeMap.entrySet()) {
+        for (Map.Entry<Person, Integer> entry : treeMap2.entrySet()) {
             System.out.println(entry.getKey() + " = " + entry.getValue());
         }
-        */
+        
     }
 }
 
